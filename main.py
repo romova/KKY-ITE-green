@@ -13,7 +13,7 @@ def timeFormat(time):
 sensor = tempSensorDS(pin_nb=4)
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
-sta_if.connect('mize', 'TomPetMich33011')
+sta_if.connect('mize', '')
 
 while not sta_if.isconnected():
     pass
