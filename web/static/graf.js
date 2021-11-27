@@ -125,38 +125,38 @@
     time = data.time;
     temp = data.temp;
     team = data.team;
-    console.log(team);
+    //console.log(team);
     //console.log(time);
     //console.log(temp);
 
     if(team=="green") {
     green_data.labels = time;
     green_data.datasets[0].data = temp;
-    console.log("zelena");
+    //console.log("zelena");
     }
 
     if(team=="red") {
     red_data.labels = time;
     red_data.datasets[0].data = temp;
-    console.log("cervena");
+    //console.log("cervena");
     }
 
     if(team=="black") {
     black_data.labels = time;
     black_data.datasets[0].data = temp;
-    console.log("cerna");
+    //console.log("cerna");
     }
     
     if(team=="blue"){
     blue_data.labels = time;
     blue_data.datasets[0].data = temp;
-    console.log("modra");
+    //console.log("modra");
     }
 
     if(team=="pink") {
     pink_data.labels = time;
     pink_data.datasets[0].data = temp;
-    console.log("ruzova");
+    //console.log("ruzova");
     }
 
     greenChart.update();

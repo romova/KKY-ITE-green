@@ -51,15 +51,15 @@ class WebWSApp(TornadoApplication):
                 temperatures[team].append(temp)
                 timestamps[team].append(time)
 
-                print({"team":team,"temp":temperatures[team]})
-                print({"team":team,"time":timestamps[team]})
+                #print({"team":team,"temp":temperatures[team]})
+                #print({"team":team,"time":timestamps[team]})
 
-                lastmessage[team] = datetime.datetime.fromisoformat(time)
-                print({"team":team,"time":lastmessage[team]})
+                #lastmessage[team] = datetime.datetime.fromisoformat(time)
+                #print({"team":team,"time":lastmessage[team]})
 
                 #self.send_ws_message(json.dumps({"team":team,"temp":temperatures[team],"time":timestamps[team]}))
                 self.send_ws_message({"team":team,"temp":temperatures[team],"time":timestamps[team]})
-                print()
+                #print()
             except:
                 pass
 
