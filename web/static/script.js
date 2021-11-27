@@ -1,5 +1,5 @@
 function onBodyLoad() {
-    ws = new WebSocket('ws://localhost:8881/websocket')     // ws is a global variable (index.html)
+    ws = new WebSocket('ws://localhost:4444/websocket')     // ws is a global variable (index.html)
     ws.onopen = onSocketOpen
     ws.onmessage = onSocketMessage
     ws.onclose = onSocketClose

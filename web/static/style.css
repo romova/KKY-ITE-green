@@ -3,3 +3,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.info-top {
+    padding-top: 25%;
+    font-size: 20px;
+    }
+    
+.info {
+    font-size: 20px;
+    }

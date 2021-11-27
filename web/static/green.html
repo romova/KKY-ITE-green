@@ -1,10 +1,10 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="generator" content="PSPad editor, www.pspad.com">
-  <title>TempMaster - hlavní okno</title>
-  <!-- Latest compiled and minified CSS -->
+  <title>Green - TempMaster</title>
+    <!-- Latest compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <!-- Latest compiled JavaScript -->
@@ -13,11 +13,11 @@
   <script src="script.js"></script>
   </head>
   <body>
-  <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
   <div class="container-fluid">
-  <a class="navbar-brand" href="#">TempMaster</a>
+  <a class="navbar-brand" href="index.html">TempMaster</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,7 +25,7 @@
     <!-- Links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="green.html">Green team</a>
+        <a class="nav-link" href="#">Green team</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Black team</a>
@@ -53,37 +53,29 @@
 </nav>
 
 <div class="container border">
-<h2 class="display-4">Green Team</h2>
-    <div style="width:50%">
-  <canvas id="green">Your browser does not support the canvas element.</canvas>
-  </div>
-</div>
-
-<div class="container">
-
-<div class="row">
-    <div class="col-sm-6 p-2 border">
-    <h3 class="display-6">Black team</h3>
-    
-     <div style="width:100%">
-    <canvas id="black">Your browser does not support the canvas element.</canvas>
+  <div class="row">
+    <div class="col-sm-8">
+    <h2 class="display-4">Green Team</h2>
+    <div style="width:100%">
+    <canvas id="green">Your browser does not support the canvas element.</canvas>
+    </div>
     </div>
     
+    <div class="col-sm-4">
+    <div style="padding-top:25%">
+    <span class="info-top">Status: </span><span class="info" id="status">Online/Offline</span> <br>
+    <span class="info">Poslední naměřená teplota: </span><span class="info" id="temp">20</span><span class="info"> °C</span> <br>
+    <span class="info">Poslední teplota přijata v: </span><span class="info" id="temp">16:00</span> <br>
+    <span class="info">Průměrná teplota za posledních 24 h: </span><span class="info" id="temp">20</span><span class="info"> °C</span> <br>
+    <span class="info">Počet alertů za posledních 24 h: </span><span class="info" id="temp">4</span>
     </div>
+    </div>
+  </div>    
     
-    <div class="col-sm-6 p-2 border"><h3 class="display-6">Red team</h3><div style="width:100%">
-    <canvas id="red">Your browser does not support the canvas element.</canvas>
-    </div></div>
-  </div>
-  
-<div class="row">
-    <div class="col-sm-6 p-2 border"><h4 class="display-6">Blue team</h3><div style="width:100%">
-    <canvas id="blue">Your browser does not support the canvas element.</canvas>
-    </div></div>
-    <div class="col-sm-6 p-2 border"><h4 class="display-6">Pink team</h3><div style="width:100%">
-    <canvas id="pink">Your browser does not support the canvas element.</canvas>
-    </div></div>
-  </div>
+    
+    
+    
+    
     
 </div>
 
